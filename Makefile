@@ -6,3 +6,5 @@ APPS+=unit-test
 
 CONTIKI = ./contiki/
 include $(CONTIKI)/Makefile.include
+
+CFLAGS+=-g
