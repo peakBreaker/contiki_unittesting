@@ -8,3 +8,9 @@ CONTIKI = ./contiki/
 include $(CONTIKI)/Makefile.include
 
 CFLAGS+=-g
+
+.PHONY: clean myclean
+clean: myclean
+
+myclean:
+	rm -rf *.native symbols.*
